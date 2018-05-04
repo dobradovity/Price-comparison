@@ -1,0 +1,233 @@
+/*//////////////////////////////////////// General //////////*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Arimo;
+	src: url(font.ttf);
+
+}
+body {
+	font-family: 'Arimo', sans-serif;
+}
+
+/*//////////////////////////////////////// Containers //////////*/
+
+#container-main {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	margin: 0 auto; 
+	width: 100%;
+	max-width: 800px;
+	height: 100%;
+	background-color: #e5eaee;
+}
+
+/*/////////// Header containers */
+
+header {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: #003680;
+	width: 100%;
+	height: 40px;
+	box-shadow: 0 0px 3px;
+}
+
+/*/////////// Main containers */
+
+main {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	flex-wrap: wrap;
+
+}
+
+#con-boxes {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.con-offer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	width: 40%;
+	margin: 35px 20px 20px 20px;
+	min-width: 250px;
+	max-width: 320px;
+	box-shadow: 0 0 4px #aeaeae;
+	border: 1px solid #babcbe;
+	color: #7a7a7a;
+}
+
+#con-result {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	padding: 0 30px 30px 30px;
+}
+
+/*/////////// Footer containers */
+
+footer {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	font-size: 77%;
+	padding: 5px;
+	border-top: 1px solid #babcbe;
+}
+
+
+/*//////////////////////////////////////// Header Nav //////////*/
+
+header a {
+	display: inline-flex;
+	width: 45px;
+	height: 45px;
+	text-decoration: none;
+
+}
+
+#div-logo {
+	background: url(img/cr2-logo.png) 0 0 no-repeat;
+	background-size: 30px;
+	width: 30px;
+	height: 30px;
+	margin-left: 40px;
+}
+
+#div-text-header {
+	display: flex;
+	margin-left: 18px;
+}
+
+/*//////////////////////////////////////// Main //////////*/
+
+
+.con-offer img { 
+	width: 100%;
+}
+
+.div-price , .div-average {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	background-color: #fff;
+	padding: 5px 5px 2px 5px;
+	margin-top: 0;
+
+}
+
+
+.div-result {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+#h2-different {
+	background-color: #21a6d3;
+	color: #fff;
+	padding: 5px 20px;
+	border-radius: 10px;
+	margin: 15px;
+}
+
+
+/*//////////////////////// Texts //////*/
+
+header h1 {
+	font-size: 160%;
+	font-weight: 600;
+	color: #fff;
+}
+
+.text-price {
+	color: #505050;
+	font-weight: 300;
+	font-size: 155%;
+
+}
+
+.text-city {
+	color: #0094c9;
+	font-weight: 300;
+	font-size: 155%;
+}
+
+.text-city a {
+	text-decoration: none;
+	color: #0094c9;
+}
+.text-city a:hover {
+	text-decoration: underline;
+	color: #0094c9;
+}
+
+.div-average h4 {
+	font-weight: 300;
+	font-size: 124%;
+	white-space: nowrap;
+}
+
+.div-result , h3 {
+	color: #3c3c3c;
+	font-weight: 300;
+}
+
+#text-result {
+	text-align: center;
+	font-size: 129%;
+}
+
+#text-result strong {
+	font-weight: 900;
+	text-shadow: 0 0 0 #000;
+}
+
+
+/*//////////////////////////////////////////////// Responsive //////*/
+
+
+/* Most phones */ 
+@media only screen and (max-width:767px) {
+
+	.con-offer {
+    	width: 130%;
+ 	}
+ 	.div-average h4 {
+	font-size: 110%;
+	}
+ }
+
+/* Tablets */ 
+@media only screen and (min-width:767px) {
+
+	.con-offer {
+    	width: 80%;
+ 	}
+
+ }
+
+	
+
+
